@@ -11,3 +11,10 @@ jobs :
                 echo "This job is running on an Ubuntu server"
                 echo "Runner OS : ${{ runner.os }}"
           
+    windows-echo:
+        runs-on : windows-latest
+        steps :
+            - name : Show OS
+              run : |
+                echo "This job is running on a Windows server"
+                echo "Runner OS : ${{ runner.os }}"
