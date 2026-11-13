@@ -10,8 +10,13 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
-            - name: Printing Folders
-              run: ls
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 20
+
+            - name: Install dependencies
+              run: npm ci
      #    checkout code from the repository
      #    install dependancies of react application
      #    execute automated tests
