@@ -17,6 +17,7 @@ jobs:
 
             - name: Install dependencies
               run: npm ci
+              working-directory: 04-using-actions/react-app
      #    checkout code from the repository
      #    install dependancies of react application
      #    execute automated tests
