@@ -1,4 +1,4 @@
-name: using functions
+name: 09 - using functions
 
 on:
     pull_request:
@@ -8,6 +8,10 @@ jobs:
     echo1:
         runs-on: ubuntu-latest
         steps:
+
+          - name: Sleep for 20 seconds
+            run: Sleep 20
+
           - name: Failing step
             run: exit 1
 
